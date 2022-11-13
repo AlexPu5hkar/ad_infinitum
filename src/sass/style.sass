@@ -14,19 +14,45 @@
     &__menu
 .list
     position: absolute
-    top: 20px
-    right: 20px
+    top: 0px
+    right: 40px
     display: grid
-    grid-template-columns: repeat(8, 50px)
-    gap: 50px
-    
+    grid-template-columns: repeat(8, 40px)
+    gap: 60px
+    &__item
+        font-size:16px
+        text-transform: uppercase
+        border: 1px solid #fff
+        width: 95px
+        height: 25px
+        border-radius: 0 0 10px 10px
+        text-align: center
+        top: 0
+        left: 20px   
+        border: 1px solid #999696
+        width: 95px
+        border-radius: 0 0 10px 10px
+        text-align: center
+        &:hover
+            font-size:18px
+            text-transform: uppercase
+            height: 50px
+            display: block
+            padding-top: 16px
+            transition: 0.2s ease-in        
+        
 a
     text-decoration: none
     color: #999696
+    
+.search__logo
+    width: 50px
+    height: 25px
+    background: url('../img/search.png') center no-repeat
     &:hover
-        box-shadow: 0 0 10px #fff
-
-
+        padding-bottom: 0
+        height: 50px         
+        z-index: 2
 
 
 
