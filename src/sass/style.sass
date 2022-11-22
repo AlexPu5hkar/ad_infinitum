@@ -13,7 +13,7 @@
 .main__logo
     position: absolute
     margin: 0 auto
-    padding-top:420px
+    padding-top: 420px
 .menu
     position: absolute
     top: 0px
@@ -54,7 +54,7 @@ a
     font-family: 'Eczar', serif
     font-weight: 400
     
-.bio, .music, .monarchy, .revisited, .legacy, .video
+.bio, .music, .monarchy, .revisited, .legacy, .video, .shop, .events, .contact
     position: relative
     background: linear-gradient(90deg, rgba(19,37,43,1) 0%, rgba(62,86,106,1) 50%, rgba(42,63,77,1) 100%)
     width: 100vw
@@ -85,9 +85,27 @@ a
         display: flex
 .links__icons > * + *
     margin-left: 18px
-
-
-
+.media__items
+    &__1
+        &:hover
+            box-shadow: 1px 1px 15px #fff
+            border-radius: 100%
+            transform: rotate3d(0, 0, 1, 360deg) 
+            transition: 1s ease-out 
+    &__2
+        &:hover
+            box-shadow: 1px 1px 15px #fff
+            border-radius: 100%
+            transform: rotate3d(0, 0, 1, 360deg) 
+            transition: 1s ease-out 
+    &__3
+        &:hover
+            transform: rotate3d(0, 0, 1, 360deg) 
+            transition: 1s ease-out 
+    &__4
+        &:hover
+            transform: rotate3d(0, 0, 1, 360deg) 
+            transition: 1s ease-out      
 .showcase__title
     text-align: center
     
@@ -141,7 +159,7 @@ a
         position: absolute
         z-index: 1
         right: -200px
-        top: 35px
+        top: 45px
     
 
 .arrow
@@ -228,4 +246,35 @@ a
 
 .slider
     position: absolute
-    top: 150px
+    top: 80px
+    width: 100vw
+    &__item
+        transition: 0.2s ease-in
+    &__btn
+        display: block
+        width: 80px
+        height: 80px
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        background: none
+        border: none
+    &__btn--prev
+        position: absolute
+        top: 237px
+        left:10px
+        justify-content: flex-start
+        z-index: 2
+    &__btn--next
+        position: absolute
+        top: 237px
+        right: 10px
+        justify-content: flex-start
+        z-index: 2
+
+.slider .center .slider__item 
+    margin-top: 0
+    width: 840px
+    height: 472px
+    justify-content: center

@@ -2,15 +2,15 @@ const owl = $('.owl-carousel');
 owl.owlCarousel({
     center: true,
     loop: true,
-    margin: 30,
+    margin:10,
     startPosition: 1,
-    items: 4,
+    items: 2,
 });
 
-$('.slider_btn--prev').click(function() {
+$('.slider__btn--prev').click(function() {
     owl.trigger('prev.owl.carousel');
 });
 
-$('.slider_btn--next').click(function() {
+$('.slider__btn--next').click(function() {
     owl.trigger('next.owl.carousel');
 });
