@@ -2,9 +2,9 @@ const owl = $('.owl-carousel');
 owl.owlCarousel({
     center: true,
     loop: true,
-    margin:10,
+    margin:310,
     startPosition: 1,
-    items: 2,
+    items: 3,
 });
 
 $('.slider__btn--prev').click(function() {
