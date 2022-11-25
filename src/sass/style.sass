@@ -13,7 +13,7 @@
 .main__logo
     position: absolute
     margin: 0 auto
-    padding-top: 420px
+    top: 420px
 .menu
     position: absolute
     top: 0px
@@ -88,14 +88,10 @@ a
 .media__items
     &__1
         &:hover
-            box-shadow: 1px 1px 15px #fff
-            border-radius: 100%
             transform: rotate3d(0, 0, 1, 360deg) 
             transition: 1s ease-out 
     &__2
         &:hover
-            box-shadow: 1px 1px 15px #fff
-            border-radius: 100%
             transform: rotate3d(0, 0, 1, 360deg) 
             transition: 1s ease-out 
     &__3
@@ -312,15 +308,43 @@ a
         position: absolute
         top: 120px
         width: 100vw
+        justify-content: center
     &__title
         text-align: center
         font: normal 40px 'Eczar', serif
         color: #999696
         text-shadow: 5px 5px 10px #000000
-    &__napalm
-        display: block
+    &__link
+        position: absolute
+        right: 50vw
+        transform: translateX(50%)
+        top: 120px
+.events
+    &__table
+        position: absolute
+        top: 120px
+        width: 100vw
         justify-content: center
-        margin: 0 auto
-        margin-top: 90px
-    &__logo
-       
+    &__title
+        text-align: center
+        font: normal 40px 'Eczar', serif
+        color: #999696
+        text-shadow: 5px 5px 10px #000000
+    &__list
+        margin: 0 100px
+        margin-top: 50px
+.events__item
+    display: grid
+    grid-template-columns: 1fr 1fr
+    margin-top: 10px 
+    &:hover
+        background: rgba(0, 0, 0, 0.1) 
+.item__date
+    font: normal 24px 'Eczar', serif
+    color: #999696
+    text-shadow: 5px 5px 10px #000000
+.item__location       
+    font: normal 24px 'Eczar', serif
+    color: #999696
+    text-shadow: 5px 5px 10px #000000
+    text-align: right
